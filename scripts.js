@@ -23,6 +23,24 @@ document.getElementById("cambiarImagen").addEventListener("mouseout", ()=>{
 // ------ Ejemplo 3 ----//
 document.getElementById("MostarMensaje").addEventListener("mouseover", ()=>{
     alert('Has pasado el mouse por encima');
-   
 })
 
+
+// ------------ Focus -----------------//
+// ------ Ejemplo 1 ----//
+var form = document.getElementById("nombreForm")
+form.addEventListener("focus", ()=>{
+    if (form.value === '') {
+        form.style.border = '3px solid red';
+    } else {
+        form.style.border = '3px solid blue';
+    }
+})
+
+// ------ Ejemplo 2 ----//
+document.getElementById("clave").addEventListener("focus", ()=>{
+    document.getElementById("infoContrasena").style.display = 'block';
+})
+document.getElementById("clave").addEventListener("focusout", ()=>{
+    document.getElementById("infoContrasena").style.display = 'none';
+})
