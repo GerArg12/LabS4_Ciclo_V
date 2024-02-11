@@ -14,7 +14,7 @@
                 <h3>Mouseover</h3>
                 <div class="col">
                     <p>Ejemplo 1:</p>
-                    <div class="card" style="width: 23rem;">
+                    <div class="card border-2 border-dark" style="width: 23rem;">
                         <div class="card-body">
                           <h5 class="card-title">Cambiar el Color de fondo</h5>
                           <h6 class="card-subtitle mb-2 text-body-secondary">Descripción: </h6>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="col">
                     <p>Ejemplo 2:</p>
-                    <div class="card" style="width: 23rem;">
+                    <div class="card border-2 border-dark" style="width: 23rem;">
                         <div class="card-body">
                           <h5 class="card-title">Cambiar Imagen</h5>
                           <h6 class="card-subtitle mb-2 text-body-secondary">Descripción: </h6>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="col">
                     <p>Ejemplo 3:</p>
-                    <div class="card" style="width: 23rem;">
+                    <div class="card border-2 border-dark" style="width: 23rem;">
                         <div class="card-body">
                           <h5 class="card-title">Mostrar mensaje al pasar el mouse</h5>
                           <h6 class="card-subtitle mb-2 text-body-secondary">Descripción: </h6>
@@ -61,7 +61,7 @@
                 <h3>Eventos Focus</h3>
                 <div class="col">
                     <p>Ejemplo 1:</p>
-                    <div class="card" style="width: 23rem;">
+                    <div class="card border-2 border-dark" style="width: 23rem;">
                         <div class="card-body">
                           <h5 class="card-title">Validación de Formulario al Enfocar</h5>
                           <h6 class="card-subtitle mb-2 text-body-secondary">Descripción: </h6>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="col">
                     <p>Ejemplo 2:</p>
-                    <div class="card" style="width: 23rem;">
+                    <div class="card border-2 border-dark" style="width: 23rem;">
                         <div class="card-body">
                           <h5 class="card-title">Mostrar Información Adicional</h5>
                           <h6 class="card-subtitle mb-2 text-body-secondary">Descripción: </h6>
@@ -89,19 +89,25 @@
                             <div id="infoContrasena" style="display: none;">
                                 La contraseña debe contener al menos 8 caracteres.
                             </div>
-                            
                         </div>
                       </div>
                 </div>
                 <div class="col">
                     <p>Ejemplo 3:</p>
-                    <div class="card" style="width: 23rem;">
+                    <div class="card border-2 border-dark" style="width: 23rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title 
-                            and make up the bulk of the card's content.</p>
+                          <h5 class="card-title">Validar Campo Completo</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Descripción: </h6>
+                          <p class="card-text">Se mostrará una alerta cuando se desenfoque el campo y el
+                            campo no este completo.</p>
                         </div>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">DUI</span>
+                            <input type="text" class="form-control" id="apellidoForm" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div id="infoDUI" style="display: none;">
+                          Escriba solo numeros
+                    </div>
                       </div>
                 </div>
             </div>
@@ -109,34 +115,52 @@
                 <h3>Eventos Clicks</h3>
                 <div class="col">
                     <p>Ejemplo 1:</p>
-                    <div class="card" style="width: 23rem;">
+                    <div class="card border-2 border-dark" style="width: 23rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title 
-                            and make up the bulk of the card's content.</p>
+                          <h5 class="card-title">Mostrar/Ocultar Elemento al hacer Click</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Descripción: </h6>
+                          <p> Al hacer clic en el botón, se muestra u oculta un elemento en la página.</p>
                         </div>
-                      </div>
+                        <button type="button" id="mostrarOcultar" class="btn btn-primary btn-lg">Ocultar/Mostrar</button>
+                        <div id="elementoMostrarOcultar">Este es un elemento</div>
+                        <br></div>
                 </div>
                 <div class="col">
                     <p>Ejemplo 2:</p>
-                    <div class="card" style="width: 23rem;">
+                    <div class="card border-2 border-dark" style="width: 23rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title 
-                            and make up the bulk of the card's content.</p>
+                          <h5 class="card-title">Cambiar Color de Fondo al Boton</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Descripción: </h6>
+                          <p class="card-text"> Al hacer clic en el área o boton, el color de fondo cambia 
+                            a diferentes colores consecutivos.</p>
+                            <div>
+                              <button type="button" id="cambiarColor" class="btn btn-danger btn-lg">Haz clic para cambiar de Color</button>
+                            </div>
                         </div>
                       </div>
                 </div>
                 <div class="col">
                     <p>Ejemplo 3:</p>
-                    <div class="card" style="width: 23rem;">
+                    <div class="card border-2 border-dark" style="width: 23rem;">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title 
-                            and make up the bulk of the card's content.</p>
+                          <h5 class="card-title">Mostrar Imagenes al Hacer Click</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Descripción: </h6>
+                          <p class="card-text">Al presionar en un boton se muesta una imagen y cambia segun
+                             el boton que selecione.
+                          </p>
+                        </div>
+                        <div id="btnImg">
+                          <div class="row">
+                            <div class="col">
+                              <button id="btnlog_old" type="button" class="btn btn-primary">Logo Antiguo</button>
+                            </div>
+                            <div class="col">
+                              <button id="btnlog_new" type="button" class="btn btn-danger">Logo Nuevo</button>
+                            </div>
+                          </div>
+                          <div  class="imagen">
+                            <img src="" id="cambiarImagenBtn" style="display: none;" />
+                        </div>
                         </div>
                       </div>
                 </div>
